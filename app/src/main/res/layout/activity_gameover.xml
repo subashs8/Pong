@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteY="314dp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/loseRestart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play again"
