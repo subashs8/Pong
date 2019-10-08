@@ -2,6 +2,7 @@ package com.example.tennis;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+alanliang
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,10 +13,15 @@ import android.view.MenuItem;
 
 public class Win extends AppCompatActivity implements View.OnClickListener {
 
+import android.os.Bundle;
+
+public class Win extends AppCompatActivity {
+master
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_win);
+alanliang
         final Button button = findViewById(R.id.winRestart);
         button.setOnClickListener(this);
     }
@@ -23,5 +29,7 @@ public class Win extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view){
         Intent i = new Intent(this, Game.class);
         startActivity(i);
+
+master
     }
 }

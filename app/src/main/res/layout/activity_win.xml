@@ -17,7 +17,11 @@
         tools:layout_editor_absoluteY="322dp" />
 
     <Button
+alanliang
         android:id="@+id/winRestart"
+
+        android:id="@+id/button5"
+master
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play again"
