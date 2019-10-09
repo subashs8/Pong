@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Tennis</string>
+    <string name="app_name">Pong</string>
+
+    <string-array name="bgcolors_array">
+        <item>White</item>
+        <item>Gray</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+    </string-array>
 </resources>

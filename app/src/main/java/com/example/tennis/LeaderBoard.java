@@ -4,6 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * The leader board activity
+ *
+ * @author Alan Liang
+ * @version 0.1 10/8/2019
+ */
 public class LeaderBoard extends AppCompatActivity {
 
     @Override

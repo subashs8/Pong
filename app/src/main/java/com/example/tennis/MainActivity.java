@@ -1,33 +1,51 @@
 package com.example.tennis;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.view.View;
-import android.app.Activity;
 import android.widget.Button;
-import android.widget.EditText;
 
-
+/**
+ * The main activity that shows login page
+ *
+ * @author Alan Liang
+ * @version 0.1 10/8/2019
+ */
 public class MainActivity extends AppCompatActivity
     implements View.OnClickListener{
 
+    /**
+     * Called while activity is created. The login button listener is initialized.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         final Button button = findViewById(R.id.loginButton);
         button.setOnClickListener(this);
     }
 
+    /**
+     * It handles login button click to open the game page
+     * @param view
+     */
     public void onClick(View view){
         Intent i = new Intent(this, Game.class);
         startActivity(i);
     }
 
+    /**
+     * Initialize the options menu on the top
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -35,6 +53,11 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * When settings menu is selected, it opens settings activity page
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
@@ -47,6 +70,9 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * Uses Intent to open settings activity
+     */
     private void showSettings(){
         Intent s = new Intent(this, Settings.class);
         startActivity(s);
